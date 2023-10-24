@@ -71,7 +71,7 @@ const AboutSection = () => {
             Atualmente trabalhando com os frameworks mais avançados do mercado
             web. Utilizando Typescript como linguagem principal para o
             desenvolvimento de aplicações web complexas e dinâmicas. Além de
-            APIs que permitem a comunicação o lado do cliente e servidor. Desdes
+            APIs que permitem a comunicação o lado do cliente e servidor. Desde
             frameworks podem ser citados Next.js e Nest.js. Sigo aprofundando
             meus estudos, buscando entender mais sobre arquitetura de software,
             GraphQL, RabbitMQ e Kafka.
@@ -89,7 +89,7 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {" "}
-              Formação{" "}
+              Formações{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
