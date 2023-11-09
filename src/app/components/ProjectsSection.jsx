@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "SuCelso Back-end",
+    title: "SuCelso API",
     description:
       "Um projeto acadêmico que simula uma interface funcional de uma escola. Com relacionamentos entre entidades como turmas, professores e cursos. Similar ao projeto Learn More.",
     image: "/images/projects/1.png",
@@ -19,7 +19,7 @@ const projectsData = [
     id: 2,
     title: "Learn More",
     description:
-      "Aplicação Back-end desenvolvida em NodeJs, utiliza o banco de dados PostgreSQL. Foram estabelecidos relacionamentos entre as entidades professor e publicações (para que os professores possam ter publicações) e professor e disciplinas (para que o professor possa ensinar uma ou mais disciplinas). Ambos os relacionamentos são de '1 para muitos' (1:n).",
+      "API desenvolvida em NodeJs, utilizando o banco de dados PostgreSQL. Foram estabelecidos relacionamentos entre as entidades professor e publicações (para que os professores possam ter publicações) e professor e disciplinas (para que o professor possa ensinar uma ou mais disciplinas). Ambos os relacionamentos são de '1 para muitos' (1:n).",
     image: "/images/projects/2.png",
     tag: ["Todos", "Back"],
     gitUrl: "https://github.com/marcelldac/server_learn_more_system",
