@@ -17,16 +17,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <TypeAnimation
-              sequence={[
-                "Marcell",
-                1000,
-                "Full-stack Dev",
-                1000,
-                /* "Cientista",
-                1000, */
-                /* "Analista de Sistemas",
-                1000, */
-              ]}
+              sequence={["Marcell", 1000, "Full-stack Dev", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -34,8 +25,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Amante de Linux e Criptomoedas. Atualmente cursando Ciência da
-            Computação na Unijorge.
+            Amante de Linux e Criptomoedas. Cientista da Computação em Formação!
           </p>
           <div>
             <Link
