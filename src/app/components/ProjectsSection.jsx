@@ -6,6 +6,16 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 7,
+    title: "Graphic Bubble Sort",
+    description:
+      "Uma releitura de um antigo projeto meu em React.js + Javascript. Agora usando Next.js v14 + Typescript. Trata-se de uma visualização de funcionamento de um algortimo de ordenação chamado Bubble Sort.",
+    image: "/images/projects/7.png",
+    tag: ["Todos", "Front"],
+    gitUrl: "https://github.com/marcelldac/graphic-bubble-sort",
+    previewUrl: "https://graphic-bubble-sort.vercel.app/",
+  },
+  {
     id: 1,
     title: "SuCelso API",
     description:
