@@ -6,6 +6,16 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 8,
+    title: "TODO List",
+    description:
+      "Uma todo list feita com ReactJs no front-end, NodeJs no back-end, utilizando PostgreSQL como banco de dados, utilizando a ORM Prisma.",
+    image: "/images/projects/8.png",
+    tag: ["Todos", "Front", "Back"],
+    gitUrl: "https://github.com/marcelldac/todo-list",
+    previewUrl: "https://github.com/marcelldac/todo-list",
+  },
+  {
     id: 7,
     title: "Graphic Bubble Sort",
     description:
