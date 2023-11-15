@@ -75,7 +75,7 @@ const AboutSection = () => {
             APIs que permitem a comunicação o lado do cliente e servidor. Desde
             frameworks podem ser citados Next.js e Nest.js. Sigo aprofundando
             meus estudos, buscando entender mais sobre arquitetura de software,
-            GraphQL, RabbitMQ e Kafka.
+            GraphQL e RabbitMQ.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
