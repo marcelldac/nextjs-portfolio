@@ -58,21 +58,21 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Ciência da Computação, Unijorge</li>
-        <li>Técnico em Desenvolvimento de Sistemas, Senai Cimatec</li>
-      </ul>
+      <div className="flex md:flex-col justify-center items-center">
+        <h1>Ciência da Computação, Unijorge</h1>
+        <h1>Técnico em Desenvolvimento de Sistemas, Senai Cimatec</h1>
+      </div>
     ),
   },
   {
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Scrum Fundamentals, Scrum Study</li>
-        <li>React.js Form Certificate, Coodesh</li>
-        <li>Formação C/C++ Developer, Dio</li>
-      </ul>
+      <div className="flex md:flex-col justify-center items-center">
+        <h1>Scrum Fundamentals, Scrum Study</h1>
+        <h1>React.js Form Certificate, Coodesh</h1>
+        <h1>Formação C/C++ Developer, Dio</h1>
+      </div>
     ),
   },
 ];
