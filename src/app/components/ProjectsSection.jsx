@@ -11,7 +11,7 @@ const projectsData = [
     description:
       "Uma todo list feita com ReactJs no front-end, NodeJs no back-end, utilizando PostgreSQL como banco de dados, utilizando a ORM Prisma.",
     image: "/images/projects/8.png",
-    tag: ["Todos", "Front", "Back"],
+    tag: ["Todos", "Front", "API"],
     gitUrl: "https://github.com/marcelldac/todo-list",
     previewUrl: "https://github.com/marcelldac/todo-list",
   },
@@ -31,7 +31,7 @@ const projectsData = [
     description:
       "Um projeto acadêmico que simula uma interface funcional de uma escola. Com relacionamentos entre entidades como turmas, professores e cursos. Similar ao projeto Learn More.",
     image: "/images/projects/1.png",
-    tag: ["Todos", "Back"],
+    tag: ["Todos", "API"],
     gitUrl: "https://github.com/marcelldac/sucelso-server",
     previewUrl: "https://github.com/marcelldac/sucelso-server",
   },
@@ -41,7 +41,7 @@ const projectsData = [
     description:
       "API desenvolvida em NodeJs, utilizando o banco de dados PostgreSQL. Foram estabelecidos relacionamentos entre as entidades professor e publicações (para que os professores possam ter publicações) e professor e disciplinas (para que o professor possa ensinar uma ou mais disciplinas). Ambos os relacionamentos são de '1 para muitos' (1:n).",
     image: "/images/projects/2.png",
-    tag: ["Todos", "Back"],
+    tag: ["Todos", "API"],
     gitUrl: "https://github.com/marcelldac/server_learn_more_system",
     previewUrl: "https://github.com/marcelldac/server_learn_more_system",
   },
@@ -71,7 +71,7 @@ const projectsData = [
     description:
       "Uma biblioteca NPM com interface de usuário que gera um código QR personalizado a partir de qualquer link fornecido pelo usuário. Feita em Typescript. Uma biblioteca NPM é uma forma de compartilhar código em JavaScript com outros desenvolvedores, permitindo que eles usem essa funcionalidade em seus próprios projetos. Nesse caso, a biblioteca possui uma interface de usuário construída com React.js e tem a capacidade de criar códigos QR personalizados a partir de URLs fornecidas pelos usuários. Isso pode ser útil em diversos contextos, como aplicativos móveis, sites ou qualquer aplicação que necessite de geração de QR codes a partir de links fornecidos dinamicamente.",
     image: "/images/projects/5.png",
-    tag: ["Todos", "Back"],
+    tag: ["Todos", "API"],
     gitUrl: "https://github.com/marcelldac/q-coder",
     previewUrl: "https://www.npmjs.com/package/q-coder",
   },
@@ -88,7 +88,7 @@ const projectsData = [
 ];
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Todos");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -114,7 +114,7 @@ const ProjectsSection = () => {
         <ProjectTag
           onClick={handleTagChange}
           name="Todos"
-          isSelected={tag === "All"}
+          isSelected={tag === "Todos"}
         />
         <ProjectTag
           onClick={handleTagChange}
@@ -123,8 +123,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Back"
-          isSelected={tag === "Back"}
+          name="API"
+          isSelected={tag === "API"}
         />
         <ProjectTag
           onClick={handleTagChange}
