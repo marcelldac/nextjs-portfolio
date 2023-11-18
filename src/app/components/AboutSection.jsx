@@ -58,52 +58,42 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          src="/images/about-image.jpg"
-          width={500}
-          height={500}
-          alt="computer image"
-        />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
-          <p className="text-base lg:text-lg">
-            Atualmente trabalhando com os frameworks mais avançados do mercado
-            web. Utilizando Typescript como linguagem principal para o
-            desenvolvimento de aplicações web complexas e dinâmicas. Além de
-            APIs que permitem a comunicação o lado do cliente e servidor. Desde
-            frameworks podem ser citados Next.js e Nest.js. Sigo aprofundando
-            meus estudos, buscando entender mais sobre arquitetura de software,
-            GraphQL e RabbitMQ.
-          </p>
-          <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Formações{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certificações{" "}
-            </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+    <section className="mx-auto md:flex sm:py-16 xl:px-16 items-center justify-center">
+      <div className="mt-4 md:mt-0 text-center md:text-left flex flex-col h-full">
+        <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
+        <p className="text-base lg:text-lg">
+          Atualmente trabalhando com os frameworks mais avançados do mercado
+          web. Utilizando Typescript como linguagem principal para o
+          desenvolvimento de aplicações web complexas e dinâmicas. Além de APIs
+          que permitem a comunicação o lado do cliente e servidor. Desde
+          frameworks podem ser citados Next.js e Nest.js. Sigo aprofundando meus
+          estudos, buscando entender mais sobre arquitetura de software, GraphQL
+          e RabbitMQ.
+        </p>
+        <div className="flex flex-row justify-center mt-8">
+          <TabButton
+            selectTab={() => handleTabChange("skills")}
+            active={tab === "skills"}
+          >
+            {" "}
+            Skills{" "}
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("education")}
+            active={tab === "education"}
+          >
+            {" "}
+            Formações{" "}
+          </TabButton>
+          <TabButton
+            selectTab={() => handleTabChange("certifications")}
+            active={tab === "certifications"}
+          >
+            {" "}
+            Certificações{" "}
+          </TabButton>
         </div>
+        <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
       </div>
     </section>
   );
