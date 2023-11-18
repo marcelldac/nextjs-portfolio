@@ -29,7 +29,7 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="https://www.linkedin.com/in/marcell-dactes-23b384294/"
+              href="https://www.linkedin.com/in/marcell-dactes/"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-green-500 hover:bg-green-600 text-white"
               target="_blank"
             >
