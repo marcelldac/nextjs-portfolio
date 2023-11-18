@@ -1,5 +1,4 @@
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
+import MainSection from "./components/MainSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
@@ -9,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <div className="container mt-24 mx-auto px-12 py-4">
-        <HeroSection />
+        <MainSection />
         <AboutSection />
         <ProjectsSection />
         <EmailSection />
