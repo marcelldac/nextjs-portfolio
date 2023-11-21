@@ -12,8 +12,7 @@ const projectsData = [
       "Uma todo list feita com ReactJs no front-end, NodeJs no back-end, utilizando PostgreSQL como banco de dados, utilizando a ORM Prisma.",
     image: "/images/projects/8.png",
     tag: ["Todos", "Front", "API"],
-    gitUrl: "https://github.com/marcelldac/todo-list",
-    previewUrl: "https://github.com/marcelldac/todo-list",
+    url: "https://github.com/marcelldac/todo-list",
   },
   {
     id: 7,
@@ -22,8 +21,7 @@ const projectsData = [
       "Uma releitura de um antigo projeto meu em React.js + Javascript. Agora usando Next.js v14 + Typescript. Trata-se de uma visualização de funcionamento de um algortimo de ordenação chamado Bubble Sort.",
     image: "/images/projects/7.png",
     tag: ["Todos", "Front"],
-    gitUrl: "https://github.com/marcelldac/graphic-bubble-sort",
-    previewUrl: "https://graphic-bubble-sort.vercel.app/",
+    url: "https://github.com/marcelldac/graphic-bubble-sort",
   },
   {
     id: 1,
@@ -32,8 +30,7 @@ const projectsData = [
       "Um projeto acadêmico que simula uma interface funcional de uma escola. Com relacionamentos entre entidades como turmas, professores e cursos. Similar ao projeto Learn More.",
     image: "/images/projects/1.png",
     tag: ["Todos", "API"],
-    gitUrl: "https://github.com/marcelldac/sucelso-server",
-    previewUrl: "https://github.com/marcelldac/sucelso-server",
+    url: "https://github.com/marcelldac/sucelso-server",
   },
   {
     id: 2,
@@ -42,8 +39,7 @@ const projectsData = [
       "API desenvolvida em NodeJs, utilizando o banco de dados PostgreSQL. Foram estabelecidos relacionamentos entre as entidades professor e publicações (para que os professores possam ter publicações) e professor e disciplinas (para que o professor possa ensinar uma ou mais disciplinas). Ambos os relacionamentos são de '1 para muitos' (1:n).",
     image: "/images/projects/2.png",
     tag: ["Todos", "API"],
-    gitUrl: "https://github.com/marcelldac/server_learn_more_system",
-    previewUrl: "https://github.com/marcelldac/server_learn_more_system",
+    url: "https://github.com/marcelldac/server_learn_more_system",
   },
   {
     id: 3,
@@ -52,8 +48,7 @@ const projectsData = [
       "DacTI é o meu projeto que comercializa web apps e projetos de TI em geral, a preços acessíveis!",
     image: "/images/projects/3.png",
     tag: ["Todos", "Front"],
-    gitUrl: "https://github.com/marcelldac/dacti",
-    previewUrl: "https://dacti-xi.vercel.app",
+    url: "https://dacti-xi.vercel.app",
   },
   {
     id: 4,
@@ -62,8 +57,7 @@ const projectsData = [
       "Um guia para iniciantes em React Native para aqueles que desejam começar com o framework. React Native foi o primeiro framework com o qual trabalhei. Inicialmente, encontrei algumas dificuldades para entender tópicos importantes como o Async Storage e o Redux Saga. Criei este guia para que as pessoas não se sintam tão perdidas quanto eu me senti quando comecei.",
     image: "/images/projects/4.png",
     tag: ["Todos", "Mobile"],
-    gitUrl: "https://github.com/marcelldac/react-native-guide",
-    previewUrl: "https://github.com/marcelldac/react-native-guide",
+    url: "https://github.com/marcelldac/react-native-guide",
   },
   {
     id: 5,
@@ -72,8 +66,7 @@ const projectsData = [
       "Uma biblioteca NPM com interface de usuário que gera um código QR personalizado a partir de qualquer link fornecido pelo usuário. Feita em Typescript. Uma biblioteca NPM é uma forma de compartilhar código em JavaScript com outros desenvolvedores, permitindo que eles usem essa funcionalidade em seus próprios projetos. Nesse caso, a biblioteca possui uma interface de usuário construída com React.js e tem a capacidade de criar códigos QR personalizados a partir de URLs fornecidas pelos usuários. Isso pode ser útil em diversos contextos, como aplicativos móveis, sites ou qualquer aplicação que necessite de geração de QR codes a partir de links fornecidos dinamicamente.",
     image: "/images/projects/5.png",
     tag: ["Todos", "API"],
-    gitUrl: "https://github.com/marcelldac/q-coder",
-    previewUrl: "https://www.npmjs.com/package/q-coder",
+    url: "https://www.npmjs.com/package/q-coder",
   },
   {
     id: 6,
@@ -82,8 +75,7 @@ const projectsData = [
       "Um protótipo inicial de um aplicativo relacionado à saúde mental, voltado ao público militar. Atualmente em processo de desenvolvimento.",
     image: "/images/projects/6.png",
     tag: ["Todos", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    url: "/",
   },
 ];
 
@@ -146,8 +138,7 @@ const ProjectsSection = () => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              url={project.url}
             />
           </motion.li>
         ))}
