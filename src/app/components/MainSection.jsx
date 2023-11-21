@@ -2,12 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 
 const MainSection = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <section className="lg:py-16">
+      <motion.div id="progress-bar" style={{ scaleX: scrollYProgress }} />
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
