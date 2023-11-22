@@ -6,6 +6,15 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 9,
+    title: "Newtion",
+    description:
+      "Com interface simples e minimalista, o Newtion une o melhor do mundo de editores de texto e minimalismo. A premissa é ser direto ao ponto. Sem distrações, agrupando o necessário para um bom editor de texto. Este é um projeto open-source em sua versão inicial. Futuramente novas features serão adicionadas.",
+    image: "/images/projects/9.png",
+    tag: ["Todos", "Front"],
+    url: "https://newtion-jet.vercel.app/",
+  },
+  {
     id: 8,
     title: "TODO List",
     description:
