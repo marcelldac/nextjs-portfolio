@@ -6,6 +6,15 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 3,
+    title: "DacTI",
+    description:
+      "DacTI é o meu projeto que comercializa web apps e projetos de TI em geral, a preços acessíveis!",
+    image: "/images/projects/3.png",
+    tag: ["Todos", "Front"],
+    url: "https://dacti-xi.vercel.app",
+  },
+  {
     id: 9,
     title: "Newtion",
     description:
@@ -49,15 +58,6 @@ const projectsData = [
     image: "/images/projects/2.png",
     tag: ["Todos", "API"],
     url: "https://github.com/marcelldac/server_learn_more_system",
-  },
-  {
-    id: 3,
-    title: "DacTI",
-    description:
-      "DacTI é o meu projeto que comercializa web apps e projetos de TI em geral, a preços acessíveis!",
-    image: "/images/projects/3.png",
-    tag: ["Todos", "Front"],
-    url: "https://dacti-xi.vercel.app",
   },
   {
     id: 4,
