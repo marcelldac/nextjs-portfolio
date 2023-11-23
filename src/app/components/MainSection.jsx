@@ -10,7 +10,10 @@ const MainSection = () => {
 
   return (
     <section className="lg:py-16">
-      <motion.div id="progress-bar" style={{ scaleX: scrollYProgress }} />
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-[10px] bg-green-500 origin-[0%]"
+        style={{ scaleX: scrollYProgress }}
+      />
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
