@@ -95,14 +95,7 @@ const AboutSection = () => {
   };
 
   return (
-    <motion.section
-      style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
-      }}
-      ref={scrollRef}
-      className="mx-auto md:flex sm:py-16 xl:px-16 items-center justify-center"
-    >
+    <section className="mx-auto md:flex sm:py-16 xl:px-16 items-center justify-center">
       <div className="mt-4 md:mt-0 text-center md:text-left flex flex-col h-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -148,7 +141,7 @@ const AboutSection = () => {
           </div>
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
