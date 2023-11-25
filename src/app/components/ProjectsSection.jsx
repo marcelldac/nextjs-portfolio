@@ -30,7 +30,7 @@ const projectsData = [
       "Uma todo list feita com ReactJs no front-end, NodeJs no back-end, utilizando PostgreSQL como banco de dados, utilizando a ORM Prisma.",
     image: "/images/projects/8.png",
     tag: ["Todos", "Front", "API"],
-    url: "https://github.com/marcelldac/todo-list",
+    url: "https://ultimate-task-list.vercel.app/",
   },
   {
     id: 7,
