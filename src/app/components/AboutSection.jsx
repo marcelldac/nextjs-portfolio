@@ -24,34 +24,34 @@ import reduxIcon from "../../../assets/svg/redux.svg";
 import jsIcon from "../../../assets/svg/js.svg";
 import flaskIcon from "../../../assets/svg/flask.svg";
 import mysqlIcon from "../../../assets/svg/mysql.svg";
-import gitIcon from "../../../assets/svg/mysql.svg";
+import gitIcon from "../../../assets/svg/git.svg";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <div className="flex flex-col md:flex-row justify-center items-center">
-        <Image src={tsIcon} alt="Typescript" width={40} height={40} />
-        <Image src={jsIcon} alt="Javascript" width={40} height={40} />
-        <Image src={reactIcon} alt="React" width={40} height={40} />
-        <Image src={reduxIcon} alt="Redux" width={40} height={40} />
-        <Image src={nextjsIcon} alt="NextJs" width={40} height={40} />
-        <Image src={nodejsIcon} alt="NodeJs" width={40} height={40} />
-        <Image src={postgresqlIcon} alt="PostgreSQL" width={40} height={40} />
-        <Image src={mongodbIcon} alt="MongoDB" width={40} height={40} />
-        <Image src={mysqlIcon} alt="MySQL" width={40} height={40} />
-        <Image src={mdIcon} alt="Markdown" width={40} height={40} />
-        <Image src={linuxIcon} alt="Linux" width={40} height={40} />
-        <Image src={htmlIcon} alt="HTML5" width={40} height={40} />
-        <Image src={cssIcon} alt="CSS3" width={40} height={40} />
-        <Image src={dockerIcon} alt="Docker" width={40} height={40} />
-        <Image src={nestjsIcon} alt="NestJs" width={40} height={40} />
-        <Image src={golangIcon} alt="Golang" width={40} height={40} />
-        <Image src={pythonIcon} alt="Python" width={40} height={40} />
-        <Image src={flaskIcon} alt="Flask" width={40} height={40} />
-        <Image src={jqueryIcon} alt="Python" width={40} height={40} />
-        <Image src={gitIcon} alt="Git" width={40} height={40} />
+      <div className="grid sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-12 gap-4 h-85 place-content-center ">
+        <Image src={tsIcon} alt="Typescript" />
+        <Image src={jsIcon} alt="Javascript" />
+        <Image src={reactIcon} alt="React" />
+        <Image src={reduxIcon} alt="Redux" />
+        <Image src={nextjsIcon} alt="NextJs" />
+        <Image src={nodejsIcon} alt="NodeJs" />
+        <Image src={postgresqlIcon} alt="PostgreSQL" />
+        <Image src={mongodbIcon} alt="MongoDB" />
+        <Image src={mysqlIcon} alt="MySQL" />
+        <Image src={mdIcon} alt="Markdown" />
+        <Image src={linuxIcon} alt="Linux" />
+        <Image src={htmlIcon} alt="HTML5" />
+        <Image src={cssIcon} alt="CSS3" />
+        <Image src={dockerIcon} alt="Docker" />
+        <Image src={nestjsIcon} alt="NestJs" />
+        <Image src={golangIcon} alt="Golang" />
+        <Image src={pythonIcon} alt="Python" />
+        <Image src={flaskIcon} alt="Flask" />
+        <Image src={jqueryIcon} alt="Python" />
+        <Image src={gitIcon} alt="Git" />
       </div>
     ),
   },
