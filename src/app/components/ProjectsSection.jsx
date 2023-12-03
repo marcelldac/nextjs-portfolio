@@ -41,7 +41,7 @@ const projects = [
     description:
       "Uma releitura de um antigo projeto meu em React.js + Javascript. Agora usando Next.js v14 + Typescript. Trata-se de uma visualização de funcionamento de um algortimo de ordenação chamado Bubble Sort.",
     image: "/images/projects/7.png",
-    url: "https://github.com/marcelldac/graphic-bubble-sort",
+    url: "https://graphic-bubble-sort.vercel.app/",
   },
   {
     id: 1,
@@ -61,11 +61,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "React Native Guide",
+    title: "React Native Crash Guide",
     description:
       "Um guia para iniciantes em React Native para aqueles que desejam começar com o framework. React Native foi o primeiro framework com o qual trabalhei. Inicialmente, encontrei algumas dificuldades para entender tópicos importantes como o Async Storage e o Redux Saga. Criei este guia para que as pessoas não se sintam tão perdidas quanto eu me senti quando comecei.",
     image: "/images/projects/4.png",
-    url: "https://github.com/marcelldac/react-native-guide",
+    url: "https://github.com/marcelldac/react-native-crash-guide",
   },
   {
     id: 5,
@@ -75,14 +75,14 @@ const projects = [
     image: "/images/projects/5.png",
     url: "https://www.npmjs.com/package/q-coder",
   },
-  {
+  /* {
     id: 6,
     title: "MikesHelp",
     description:
       "Um protótipo inicial de um aplicativo relacionado à saúde mental, voltado ao público militar. Atualmente em processo de desenvolvimento.",
     image: "/images/projects/6.png",
     url: "/",
-  },
+  }, */
 ];
 
 const ProjectsSection = () => {
