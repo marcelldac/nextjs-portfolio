@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 10,
-    title: "Nerd Navegante",
+    title: "Blog Nerd Navegante",
     description:
       "Meu blog feito com NextJs e MongoDB. Posto constantemente conteúdos sobre desenvolvimento de software, arquitetura de software e tudo mais.",
     image: "/images/projects/10.png",
