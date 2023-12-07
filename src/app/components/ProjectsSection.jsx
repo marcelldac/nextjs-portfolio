@@ -4,6 +4,14 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    id: 11,
+    title: "API Crypto Guardian",
+    description:
+      "API desenvolvida com o intuito de facilitar transações envolvendo criptomoedas, especificamente Ethereum. Basta passar o valor mínimo e máximo que você tem disponível para fazer a transação e a API vai validar a transação como true (possível de ser feita) e false (impossível de ser feita). É uma API de validação que atrelada a um front-end previamente configurado, tem muito poder!",
+    image: "/images/projects/11.png",
+    url: "https://documenter.getpostman.com/view/27634188/2s9YeK4pvV",
+  },
+  {
     id: 10,
     title: "Nerd Navegante",
     description:
