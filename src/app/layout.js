@@ -1,5 +1,8 @@
+import "@mantine/core/styles.css";
 import "./globals.css";
+import { MantineProvider } from "@mantine/core";
 import { Inter } from "next/font/google";
+import { theme } from "../theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +18,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" sizes="any" />
       </head>
       <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <MantineProvider theme={theme}>{children}</MantineProvider>
+        </body>
       </html>
     </>
   );
