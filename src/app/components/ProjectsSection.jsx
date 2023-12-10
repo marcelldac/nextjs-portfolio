@@ -83,14 +83,6 @@ const projects = [
     image: "/images/projects/5.png",
     url: "https://www.npmjs.com/package/q-coder",
   },
-  /* {
-    id: 6,
-    title: "MikesHelp",
-    description:
-      "Um protótipo inicial de um aplicativo relacionado à saúde mental, voltado ao público militar. Atualmente em processo de desenvolvimento.",
-    image: "/images/projects/6.png",
-    url: "/",
-  }, */
 ];
 
 const ProjectsSection = () => {
