@@ -1,5 +1,5 @@
-import { Flex, Text } from "@mantine/core";
 import React from "react";
+import { Flex, Text } from "@mantine/core";
 
 const Footer = () => {
   return (
