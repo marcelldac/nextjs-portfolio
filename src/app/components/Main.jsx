@@ -19,7 +19,6 @@ const MainSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
           >
             <Text>
               <TypeAnimation
@@ -35,8 +34,6 @@ const MainSection = () => {
               Formação!
             </Text>
             <Button
-              variant="filled"
-              color="green"
               component="a"
               href="https://www.linkedin.com/in/marcell-dactes/"
               target="_blank"
@@ -50,7 +47,6 @@ const MainSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-4 place-self-center mt-4 lg:mt-0"
           >
             <Box w="250px" h="350px" bg="gray" pos="relative">
               <Image src="/images/hero-image.png" alt="developer image" />
