@@ -1,5 +1,4 @@
 "use client";
-
 import { Button, Text, createTheme } from "@mantine/core";
 
 export const theme = createTheme({
@@ -14,7 +13,8 @@ export const theme = createTheme({
     Button: Button.extend({
       defaultProps: {
         variant: "filled",
-        color: "green",
+        color: "white",
+        bg: "green",
       },
     }),
   },
