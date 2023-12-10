@@ -1,10 +1,10 @@
 "use client";
-import React, { useTransition, useState, useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
-
+import React, { useTransition, useState } from "react";
+import { motion } from "framer-motion";
+import { Box, Flex, Grid, Text } from "@mantine/core";
+import { FONT_WEIGHT_BOLD } from "@/constants";
 import TabButton from "./TabButton";
-
 import tsIcon from "../../../assets/svg/ts.svg";
 import reactIcon from "../../../assets/svg/react.svg";
 import postgresqlIcon from "../../../assets/svg/postgresql.svg";
@@ -31,49 +31,89 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <div className="grid sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-12 gap-4 h-85 place-content-center ">
-        <Image src={tsIcon} alt="Typescript" />
-        <Image src={jsIcon} alt="Javascript" />
-        <Image src={reactIcon} alt="React" />
-        <Image src={reduxIcon} alt="Redux" />
-        <Image src={nextjsIcon} alt="NextJs" />
-        <Image src={nodejsIcon} alt="NodeJs" />
-        <Image src={postgresqlIcon} alt="PostgreSQL" />
-        <Image src={mongodbIcon} alt="MongoDB" />
-        <Image src={mysqlIcon} alt="MySQL" />
-        <Image src={mdIcon} alt="Markdown" />
-        <Image src={linuxIcon} alt="Linux" />
-        <Image src={htmlIcon} alt="HTML5" />
-        <Image src={cssIcon} alt="CSS3" />
-        <Image src={dockerIcon} alt="Docker" />
-        <Image src={nestjsIcon} alt="NestJs" />
-        <Image src={golangIcon} alt="Golang" />
-        <Image src={pythonIcon} alt="Python" />
-        <Image src={flaskIcon} alt="Flask" />
-        <Image src={jqueryIcon} alt="Python" />
-        <Image src={gitIcon} alt="Git" />
-      </div>
+      <Grid>
+        <Grid.Col span={1}>
+          <Image src={tsIcon} alt="Typescript" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={jsIcon} alt="Javascript" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={reactIcon} alt="React" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={reduxIcon} alt="Redux" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={nextjsIcon} alt="NextJs" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={nodejsIcon} alt="NodeJs" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={postgresqlIcon} alt="PostgreSQL" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={mongodbIcon} alt="MongoDB" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={mysqlIcon} alt="MySQL" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={mdIcon} alt="Markdown" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={linuxIcon} alt="Linux" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={htmlIcon} alt="HTML5" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={cssIcon} alt="CSS3" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={dockerIcon} alt="Docker" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={nestjsIcon} alt="NestJs" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={golangIcon} alt="Golang" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={pythonIcon} alt="Python" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={flaskIcon} alt="Flask" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={jqueryIcon} alt="Python" />
+        </Grid.Col>
+        <Grid.Col span={1}>
+          <Image src={gitIcon} alt="Git" />
+        </Grid.Col>
+      </Grid>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Formacoes",
+    id: "formacoes",
     content: (
-      <div className="flex md:flex-col justify-center items-center">
-        <h1>Ciência da Computação, Unijorge</h1>
-        <h1>Técnico em Desenvolvimento de Sistemas, Senai Cimatec</h1>
-      </div>
+      <Flex direction="column" justify="center" align="center">
+        <Text>Ciência da Computação, Unijorge</Text>
+        <Text>Técnico em Desenvolvimento de Sistemas, Senai Cimatec</Text>
+      </Flex>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Certificacoes",
+    id: "certificacoes",
     content: (
-      <div className="flex md:flex-col justify-center items-center">
-        <h1>Scrum Fundamentals, Scrum Study</h1>
-        <h1>React.js Form Certificate, Coodesh</h1>
-        <h1>Formação C/C++ Developer, Dio</h1>
-      </div>
+      <Flex direction="column" justify="center" align="center">
+        <Text>Scrum Fundamentals, Scrum Study</Text>
+        <Text>React.js Form Certificate, Coodesh</Text>
+        <Text>Formação C/C++ Developer, Dio</Text>
+      </Flex>
     ),
   },
 ];
@@ -82,12 +122,6 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const scrollRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: scrollRef,
-    offset: ["0 1", "1.33 1"],
-  });
-
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
@@ -95,7 +129,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="mx-auto md:flex sm:py-16 xl:px-16 items-center justify-center">
+    <Flex mx="auto" align="center" justify="center">
       <div className="mt-4 md:mt-0 text-center md:text-left flex flex-col h-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -103,8 +137,10 @@ const AboutSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
-          <p className="text-base lg:text-lg">
+          <Text fw={FONT_WEIGHT_BOLD} mb={4}>
+            Sobre Mim
+          </Text>
+          <Text>
             Atualmente trabalhando com os frameworks mais avançados do mercado
             web. Utilizando Typescript como linguagem principal para o
             desenvolvimento de aplicações web complexas e dinâmicas. Além de
@@ -112,8 +148,8 @@ const AboutSection = () => {
             frameworks podem ser citados Next.js e Nest.js. Sigo aprofundando
             meus estudos, buscando entender mais sobre arquitetura de software,
             GraphQL e Message Brokers.
-          </p>
-          <div className="flex flex-row justify-center mt-8">
+          </Text>
+          <Flex direction="row" justify="center" mt={8}>
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -122,26 +158,24 @@ const AboutSection = () => {
               Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("formacoes")}
+              active={tab === "formacoes"}
             >
               {" "}
               Formações{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("certificacoes")}
+              active={tab === "certificacoes"}
             >
               {" "}
               Certificações{" "}
             </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
+          </Flex>
+          <Box mt={8}>{TAB_DATA.find((t) => t.id === tab).content}</Box>
         </motion.div>
       </div>
-    </section>
+    </Flex>
   );
 };
 
