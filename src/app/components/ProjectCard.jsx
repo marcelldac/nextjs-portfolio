@@ -1,9 +1,6 @@
 import React from "react";
-import { EyeIcon } from "@heroicons/react/24/outline";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
 import Link from "next/link";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ imgUrl, title, description, url }) => {
