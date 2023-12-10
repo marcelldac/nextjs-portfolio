@@ -1,12 +1,13 @@
+import { Flex, Text } from "@mantine/core";
 import React from "react";
 
 const Footer = () => {
   return (
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-      <div className="container p-12 flex justify-between">
-        <span>Marcell Dactes</span>
-        <p className="text-slate-600">Todos os direitos reservados.</p>
-      </div>
+      <Flex justify="space-between" p={12}>
+        <Text>Marcell Dactes</Text>
+        <Text>Todos os direitos reservados.</Text>
+      </Flex>
     </footer>
   );
 };
