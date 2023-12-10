@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { Box, Text } from "@mantine/core";
 
 const projects = [
   {
@@ -87,10 +88,10 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <Box>
+      <Text size="xl" ta="center" my={30}>
         Projetos
-      </h2>
+      </Text>
       <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
         {projects.map((project) => (
           <ProjectCard
@@ -102,7 +103,7 @@ const ProjectsSection = () => {
           />
         ))}
       </ul>
-    </section>
+    </Box>
   );
 };
 
